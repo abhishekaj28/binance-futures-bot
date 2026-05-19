@@ -87,3 +87,4 @@ def validate_stop_price(stop_price: Optional[str], order_type: str) -> Optional[
     if sp <= 0:
         raise ValueError(f"Stop price must be > 0, got {sp}.")
     return str(sp)
+
